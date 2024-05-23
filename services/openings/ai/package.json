@@ -1,0 +1,4 @@
+{
+  "name": "ai",
+  "types": "./ai.d.ts"
+}

@@ -1,0 +1,4 @@
+{
+  "name": "movies",
+  "types": "./movies.d.ts"
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://platformatic.dev/schemas/v1.41.1/service",
+  "service": {
+    "openapi": true
+  },
+  "watch": true,
+  "plugins": {
+    "paths": [
+      {
+        "path": "./plugins",
+        "encapsulate": false
+      },
+      "./routes"
+    ],
+    "typescript": "{PLT_OPENINGS_TYPESCRIPT}"
+  },
+  "clients": [
+    {
+      "schema": "movies/movies.openapi.json",
+      "name": "movies",
+      "type": "openapi",
+      "serviceId": "movies"
+    },
+    {
+      "schema": "ai/ai.openapi.json",
+      "name": "ai",
+      "type": "openapi",
+      "serviceId": "ai"
+    }
+  ]
+}

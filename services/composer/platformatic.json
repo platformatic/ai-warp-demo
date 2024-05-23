@@ -1,0 +1,31 @@
+{
+  "$schema": "https://platformatic.dev/schemas/v1.41.1/composer",
+  "composer": {
+    "services": [
+      {
+        "id": "movies",
+        "openapi": {
+          "url": "/documentation/json"
+        }
+      },
+      {
+        "id": "openings",
+        "openapi": {
+          "url": "/documentation/json"
+        }
+      }
+    ],
+    "refreshTimeout": 1000
+  },
+  "watch": true,
+  "plugins": {
+    "paths": [
+      {
+        "path": "./plugins",
+        "encapsulate": false
+      },
+      "./routes"
+    ],
+    "typescript": "{PLT_COMPOSER_TYPESCRIPT}"
+  }
+}

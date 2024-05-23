@@ -1,0 +1,17 @@
+{
+  "name": "movies",
+  "scripts": {
+    "start": "platformatic start",
+    "test": "borp"
+  },
+  "devDependencies": {
+    "fastify": "^4.26.2",
+    "borp": "^0.14.0"
+  },
+  "dependencies": {
+    "@platformatic/db": "^1.41.1"
+  },
+  "engines": {
+    "node": "^18.8.0 || >=20.6.0"
+  }
+}
